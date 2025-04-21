@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Наша бригада</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Склад нашої бригади</h1>
+      <p>Динамічна сторінка зі списком учасників</p>
+
+      <img src="/images/picture.jpg" alt="Наша бригада" class="team-image" />
+    </header>
+
+    <div class="container">
+      <% people.forEach(person => { %>
+      <div class="card">
+        <h2><%= person.fullName %></h2>
+        <p><strong>Звідки:</strong> <%= person.from %></p>
+        <p><strong>Вік:</strong> <%= person.age %></p>
+        <p><strong>Email:</strong> <%= person.email %></p>
+        <p><%= person.description %></p>
+        <a href="/api/group-overview/<%= person.id %>"
+          >Переглянути детальніше</a
+        >
+      </div>
+      <% }) %>
+    </div>
+  </body>
+</html>

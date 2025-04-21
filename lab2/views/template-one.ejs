@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title><%= fullName %> — Інформація</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Інформація про учасника</h1>
+    </header>
+
+    <div class="container">
+      <div class="card">
+        <h2><%= fullName %></h2>
+        <p><strong>Місце проживання:</strong> <%= from %></p>
+        <p><strong>Вік:</strong> <%= age %></p>
+        <p>
+          <strong>Email:</strong> <a href="mailto:<%= email %>"><%= email %></a>
+        </p>
+        <p><strong>Опис:</strong> <%= description %></p>
+      </div>
+
+      <p><a href="/">← Повернутись до списку бригади</a></p>
+      <p></p>
+    </div>
+  </body>
+</html>
