@@ -1,0 +1,23 @@
+[
+	{
+	  "id": 1,
+	  "fullName": "Кудрявцев Артем",
+	  "from": "Київ",
+	  "age": 18,
+	  "email": "kydryavcev@ukr.net"
+	},
+	{
+	  "id": 2,
+	  "fullName": "Кириченко Назар",
+	  "from": "Чернігів",
+	  "age": 19,
+	  "email": "nazar.kyrychenko@ukr.net"
+	},
+	{
+	  "id": 3,
+	  "fullName": "Пилипенко Михайло",
+	  "from": "Київ",
+	  "age": 19,
+	  "email": "misha@ukr.net"
+	}
+  ]
